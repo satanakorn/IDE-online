@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% include 'header.html' %}
+{% block title %} Python IDE {% endblock %}
+
+{% block body %}
+
+<div id="editor"></div>
+<div id="terminal"><pre>Terminal:</pre></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.12/ace.js"></script>
+
+
+<button id="runButton">Run</button>
+<button id="clearButton">Clear Terminal</button>
+
+
+{% endblock %}

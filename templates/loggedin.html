@@ -1,0 +1,21 @@
+{% extends 'base.html'%}
+{% include 'header.html'%}
+{% block title %} user account {% endblock%}
+
+{% block body%} 
+
+    <div class="container">
+        <div class="row">	
+            <h1>User Profile</h1>
+        </div>
+        <br>
+        <div class="row">	
+            Logged in : <strong>{{session.name}} | <a href="{{ url_for('logout') }}"> Logout</a>
+        </div>
+        <br><br>
+        <div class="row">
+            
+            <h2>Welcome to the user profile page...</h2> 
+        </div>		
+    </div>
+{% endblock %}
